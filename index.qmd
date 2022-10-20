@@ -5,3 +5,19 @@ title: "mn-workshop-zurich"
 This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+Outline: 
+
+1. Absolute introduction to Blender (really basics)
+
+2. How to import structures (from pymol / chimerax)
+
+3. Molecular Nodes (basics of)
+
+4. Membrane scene / complicated scene
+
+5. Showing some animations
+
+6. Recap of the first day / and what can be done
+
+7. More on molecular nodes and what people want to play around with. 
