@@ -2,18 +2,39 @@ project:
   type: website
 
 website:
-  title: "mn-workshop-zurich"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+  title: "Protein Visualisation Workshop"
+  sidebar:
+    style: floating
+    tools:
+      - icon: twitter
+        href: https://twitter.com/bradyajohnston
+      - icon: github
+        href: https://github.com/BradyAJohnston/2022-11-10-blender-workshop/
+    search: true
+    contents:
+      - section: "Information"
+        contents:
+        - href: index.qmd
+          text: About
+        - installation.qmd
+        - online-tutorials.qmd
+      - section: "Workshop"
+        contents:
+        - introduction.qmd
+        - exporting-importing.qmd
+        - molecular-nodes.qmd
+        - complex-scene.qmd
+        - animation.qmd
+        
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
+
 
 
 

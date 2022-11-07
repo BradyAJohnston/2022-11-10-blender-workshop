@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Protein Visualisation Workshop</title>
+<title>Protein Visualisation Workshop - 1. Introduction to Blender</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Protein Visualisation Workshop</h1>
+      <h1 class="quarto-secondary-nav-title">1. Introduction to Blender</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -101,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Home</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Home</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -111,12 +111,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./installation.html" class="sidebar-item-text sidebar-link">0. Installation</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./introduction.html" class="sidebar-item-text sidebar-link">1. Introduction to Blender</a>
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link active">1. Introduction to Blender</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -134,15 +129,25 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#workspaces" id="toc-workspaces" class="nav-link active" data-scroll-target="#workspaces">Workspaces</a>
+  <ul class="collapse">
+  <li><a href="#the-3d-viewport" id="toc-the-3d-viewport" class="nav-link" data-scroll-target="#the-3d-viewport">The 3D Viewport</a></li>
+  <li><a href="#geometry-nodes-editor" id="toc-geometry-nodes-editor" class="nav-link" data-scroll-target="#geometry-nodes-editor">Geometry Nodes Editor</a></li>
+  <li><a href="#shader-editor" id="toc-shader-editor" class="nav-link" data-scroll-target="#shader-editor">Shader Editor</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Protein Visualisation Workshop</h1>
-<p class="subtitle lead">Protein visualisation workshop for ETH Zurich, November 10-11.</p>
+<h1 class="title d-none d-lg-block">1. Introduction to Blender</h1>
 </div>
 
 
@@ -156,25 +161,58 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>The outline for this workshop is as below:</p>
-<ol type="1">
-<li>Absolute introduction to Blender (really basics)</li>
-</ol>
+<p>Blender is a complicated program and it is easy to get overwhelmed. We are going to look at it bit by bit, and ultimately only use a fraction of what Blender is capable of.</p>
+<section id="workspaces" class="level2">
+<h2 class="anchored" data-anchor-id="workspaces">Workspaces</h2>
+<p>Blender has a lot of workspaces. It’s a tool that can be used for a nearly unlimited number of tasks. People use it for 2D animated movies, 3D animated movies and TV shows, motion graphics &amp; VFX, creating assets for blockbuster videogames and even for making cool renderings of proteins.</p>
+<p>Because Blender can be used for so many different purposes, there is a lot of functionality that can be completely overwhelming when you are first starting out. Thankfully for the work that we are wanting to do, we will only need a small subset of what Blender can offer, and so we can limit ourselves to a couple of workspaces.</p>
+<section id="the-3d-viewport" class="level3">
+<h3 class="anchored" data-anchor-id="the-3d-viewport">The 3D Viewport</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-820DB89C.png" class="img-fluid figure-img" alt="A screenshot of Blender, showing the default starting scene, demonstrating the 3D viewport with a single object in the centre, the default cube."></p>
+<p></p><figcaption class="figure-caption">The starting 3D viewport, which you are greeted with when you start Blender.</figcaption><p></p>
+</figure>
+</div>
+<p>This 3D viewport will seem familiar if you have used other programs such as PyMol, ChimeraX &amp; VMD. You can move the camera around just like in those other programs.</p>
+<p>You can rotate the camera view either using the middle mouse button <kbd>MMB</kbd>, or using your touch pad if you are on a laptop. You can also click and drag the axis widget to rotate the camera.</p>
+<p>You can pan the camera using <kbd>Shift</kbd> + <kbd>MMB</kbd></p>
+<p>The main difference is that you can also manipulate the 3D scene in front of you. You can select objects with a left click of the mouse, and move them around by <em>Grabbing</em> them with the <kbd>G</kbd> key.</p>
+<p>The main actions that you use the 3D Viewport for are:<br>
+</p>
 <ul>
-<li>The different workspaces</li>
-<li>How to move the camera around</li>
-<li>How to move objects around</li>
+<li><p><kbd>G</kbd> - <strong>Grabbing:</strong> Moving an object around in 3D space.</p></li>
+<li><p><kbd>S</kbd> - <strong>Scaling:</strong> Changing the relative size of an object.</p></li>
+<li><p><kbd>R</kbd> - <strong>Rotating:</strong> Rotating the object in 3D space.</p></li>
 </ul>
-<ol start="2" type="1">
-<li><p>How to import structures (from pymol / chimerax)</p></li>
-<li><p>Molecular Nodes (basics of)</p></li>
-<li><p>Membrane scene / complicated scene</p></li>
-<li><p>Showing some animations</p></li>
-<li><p>Recap of the first day / and what can be done</p></li>
-<li><p>More on molecular nodes and what people want to play around with.</p></li>
-</ol>
+<section id="the-grid-and-axes" class="level4">
+<h4 class="anchored" data-anchor-id="the-grid-and-axes">The Grid and Axes</h4>
+<p>In the 3D viewport, much like in real life, there are 3 axes of possible movement and direction. Inside of Blender they are <code>X</code> <code>Y</code> and <code>Z</code>. <code>X</code> and <code>Y</code> form the flat grid that you see in the viewport, being coloured TODO red and green respectively, while <code>Z</code> is the blue vertical axis. These are labelled and highlighted on the axis widget, which is present in the top right corner of the viewport. This will rotate as you rotate the view, so it can always be used as a reference point.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-E98C8D82.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The axis widget, present in the 3D viewport.</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="geometry-nodes-editor" class="level3">
+<h3 class="anchored" data-anchor-id="geometry-nodes-editor">Geometry Nodes Editor</h3>
+<p>This is where we edit the node graph for Molecular Nodes. The node graph is a program you create, that is read and executed by Blender from left to right. Each node performs an action on the geometry that is passed into it, and the result of that action is passed out to the right.</p>
+<blockquote class="blockquote">
+<p>Think of it as creating a set of rules for the computer to follow. You define the rules, and the computer can follow those same rules, even if you start with a different data set.</p>
+</blockquote>
+<p>Combining multiple different nodes you can create protein models and complex 3D scenes.</p>
+<p><img src="images/paste-319720EE.png" class="img-fluid"></p>
+</section>
+<section id="shader-editor" class="level3">
+<h3 class="anchored" data-anchor-id="shader-editor">Shader Editor</h3>
+<p>This is where you can change the colour of something. Coming from a program like PyMol and ChimeraX, you might be used to the idea of just changing the colour of something. “I want my protein to be red.”, and then just making that change with a colour picker.</p>
+<p>When dealing with 3D scenes, it’s not quite as simple as that anymore. Blender is a 3D rendering program, which means it takes into account not just the colour or something, but other physical properties of an object when calculating how it <em>looks</em>. You can change how <em>metallic</em> a surface is, along with how rough it is and a lot of other complex components in 3D graphics. Try not to worry too much about what you are playing around with, just move the sliders one way and the other to try and find a look that you like. You will however be able to change the colour of something by changing the primary RGB selector.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

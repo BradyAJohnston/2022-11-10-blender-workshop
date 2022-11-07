@@ -1,14 +1,14 @@
 ---
-title: "mn-workshop-zurich"
+title: "Protein Visualisation Workshop"
+subtitle: "Protein visualisation workshop for ETH Zurich, November 10-11."
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-Outline: 
+The outline for this workshop is as below:
 
 1. Absolute introduction to Blender (really basics)
+- The different workspaces
+- How to move the camera around
+- How to move objects around    
 
 2. How to import structures (from pymol / chimerax)
 

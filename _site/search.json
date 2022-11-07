@@ -9,8 +9,92 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "mn-workshop-zurich",
+    "title": "Protein Visualisation Workshop",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Absolute introduction to Blender (really basics)\n\n\nThe different workspaces\nHow to move the camera around\nHow to move objects around\n\n\nHow to import structures (from pymol / chimerax)\nMolecular Nodes (basics of)\nMembrane scene / complicated scene\nShowing some animations\nRecap of the first day / and what can be done\nMore on molecular nodes and what people want to play around with."
+  },
+  {
+    "objectID": "introduction.html",
+    "href": "introduction.html",
+    "title": "1. Introduction to Blender",
+    "section": "",
+    "text": "Blender is a complicated program and it is easy to get overwhelmed. We are going to look at it bit by bit, and ultimately only use a fraction of what Blender is capable of."
+  },
+  {
+    "objectID": "introduction.html#workspaces",
+    "href": "introduction.html#workspaces",
+    "title": "1. Introduction to Blender",
+    "section": "Workspaces",
+    "text": "Workspaces\nBlender has a lot of workspaces. It’s a tool that can be used for a nearly unlimited number of tasks. People use it for 2D animated movies, 3D animated movies and TV shows, motion graphics & VFX, creating assets for blockbuster videogames and even for making cool renderings of proteins.\nBecause Blender can be used for so many different purposes, there is a lot of functionality that can be completely overwhelming when you are first starting out. Thankfully for the work that we are wanting to do, we will only need a small subset of what Blender can offer, and so we can limit ourselves to a couple of workspaces.\n\nThe 3D Viewport\n\n\n\nThe starting 3D viewport, which you are greeted with when you start Blender.\n\n\nThis 3D viewport will seem familiar if you have used other programs such as PyMol, ChimeraX & VMD. You can move the camera around just like in those other programs.\nYou can rotate the camera view either using the middle mouse button MMB, or using your touch pad if you are on a laptop. You can also click and drag the axis widget to rotate the camera.\nYou can pan the camera using Shift + MMB\nThe main difference is that you can also manipulate the 3D scene in front of you. You can select objects with a left click of the mouse, and move them around by Grabbing them with the G key.\nThe main actions that you use the 3D Viewport for are:\n\n\nG - Grabbing: Moving an object around in 3D space.\nS - Scaling: Changing the relative size of an object.\nR - Rotating: Rotating the object in 3D space.\n\n\nThe Grid and Axes\nIn the 3D viewport, much like in real life, there are 3 axes of possible movement and direction. Inside of Blender they are X Y and Z. X and Y form the flat grid that you see in the viewport, being coloured TODO red and green respectively, while Z is the blue vertical axis. These are labelled and highlighted on the axis widget, which is present in the top right corner of the viewport. This will rotate as you rotate the view, so it can always be used as a reference point.\n\n\n\nThe axis widget, present in the 3D viewport.\n\n\n\n\n\nGeometry Nodes Editor\nThis is where we edit the node graph for Molecular Nodes. The node graph is a program you create, that is read and executed by Blender from left to right. Each node performs an action on the geometry that is passed into it, and the result of that action is passed out to the right.\n\nThink of it as creating a set of rules for the computer to follow. You define the rules, and the computer can follow those same rules, even if you start with a different data set.\n\nCombining multiple different nodes you can create protein models and complex 3D scenes.\n\n\n\nShader Editor\nThis is where you can change the colour of something. Coming from a program like PyMol and ChimeraX, you might be used to the idea of just changing the colour of something. “I want my protein to be red.”, and then just making that change with a colour picker.\nWhen dealing with 3D scenes, it’s not quite as simple as that anymore. Blender is a 3D rendering program, which means it takes into account not just the colour or something, but other physical properties of an object when calculating how it looks. You can change how metallic a surface is, along with how rough it is and a lot of other complex components in 3D graphics. Try not to worry too much about what you are playing around with, just move the sliders one way and the other to try and find a look that you like. You will however be able to change the colour of something by changing the primary RGB selector."
+  },
+  {
+    "objectID": "exporting-importing.html",
+    "href": "exporting-importing.html",
+    "title": "2. PyMol and ChimeraX",
+    "section": "",
+    "text": "There are several ways to import protein structures into Blender and other 3D programs for animation and rendering, they all have their advantages and disadvantages. In this section we will cover how to export a 3D model from PyMol or ChimeraX (the principle remains the same for other Molecular Graphics Software) and to then import it into Blender."
+  },
+  {
+    "objectID": "exporting-importing.html#exporting-the-model",
+    "href": "exporting-importing.html#exporting-the-model",
+    "title": "2. PyMol and ChimeraX",
+    "section": "Exporting the Model",
+    "text": "Exporting the Model\n\nPyMol\nfetch 4ozs\n\nIf we run the following command inside of PyMol, we get some information on the save command and the formats that we can save in:\nhelp save\nDESCRIPTION\n \n    \"save\" writes content to a file.\n \nUSAGE\n \n    save filename [, selection [, state [, format ]]]\n \nARGUMENTS\n \n    filename = string: file path to be written\n \n    selection = string: atoms to save {default: (all)}\n \n    state = integer: state to save {default: -1 (current state)}\n \nPYMOL API\n \n    cmd.save(string file, string selection, int state, string format)\n \nNOTES\n \n    The file format is automatically chosen if the extesion is one of\n    the supported output formats: pdb, pqr, mol, sdf, pkl, pkla, mmd, out,\n    dat, mmod, cif, pov, png, pse, psw, aln, fasta, obj, mtl, wrl, dae, idtf,\n    or mol2.\n \n    If the file format is not recognized, then a PDB file is written\n    by default.\n \n    For molecular files and where applicable and supported:\n \n    * if state = -1 (default), then only the current state is written.\n \n    * if state = 0, then a multi-state output file is written.\n \nSEE ALSO\n \n    load, get_model\n \nInside of the nodes, we see the supported output formats are: pdb, pqr, mol, sdf, pkl, pkla, mmd, out, dat, mmod, cif, pov, png, pse, psw, aln, fasta, obj, mtl, wrl, dae, idtf, or mol2.\nSome of these are relevant to the work that you are likely already familiar with such as the .mol and the .pdb, but a lot of them may seem strange. .obj, .dae, .wrl are all generic 3D model formats that are not specific to proteins at all. You can save your 3D model you have displayed inside of your viewport with the following command:\nsave protein.wrl\nDifferent 3D model formats have pros and cons. I have found .wrl to be the best when exporting from PyMol.\n\n\n\n\n\n\nWarning\n\n\n\nPyMol will export the 3D model relative to where the camera currently is. That means if you export one half a dimer, move the camera, then export the other half of the dimer, they will not line up when importing to Blender.\n\n\nYou should now have a 3D model save in your working directory, which is ready to be imported into Blender."
+  },
+  {
+    "objectID": "online-tutorials.html",
+    "href": "online-tutorials.html",
+    "title": "Online Tutorials",
+    "section": "",
+    "text": "There are a number of online tutorials which have been posted on YouTube, aimed at people with Structural Biology knowledge and introducing them to the world of 3D."
+  },
+  {
+    "objectID": "online-tutorials.html#blender-for-biochemists",
+    "href": "online-tutorials.html#blender-for-biochemists",
+    "title": "Online Tutorials",
+    "section": "Blender for Biochemists",
+    "text": "Blender for Biochemists\nBelow are the videos on a general introduction to Blender for Biochemists and others alike, focusing on how to export proteins from PyMol and ChimeraX and import it into Blender."
+  },
+  {
+    "objectID": "online-tutorials.html#molecular-nodes",
+    "href": "online-tutorials.html#molecular-nodes",
+    "title": "Online Tutorials",
+    "section": "Molecular Nodes",
+    "text": "Molecular Nodes\nTutorials focusing on how to use the current iteration of Molecular Nodes, from importing from the PDB and doing some basics of styling and rendering the proteins."
+  },
+  {
+    "objectID": "molecular-nodes.html",
+    "href": "molecular-nodes.html",
+    "title": "3. Molecular Nodes",
+    "section": "",
+    "text": "This is how you go about using moelcular nodes for rendering proteins!"
+  },
+  {
+    "objectID": "installation.html#installing-molecular-nodes",
+    "href": "installation.html#installing-molecular-nodes",
+    "title": "Installation",
+    "section": "Installing Molecular Nodes",
+    "text": "Installing Molecular Nodes"
+  },
+  {
+    "objectID": "installation.html#optional-installing-pymol-or-chimerax",
+    "href": "installation.html#optional-installing-pymol-or-chimerax",
+    "title": "Installation",
+    "section": "Optional: Installing PyMol or ChimeraX",
+    "text": "Optional: Installing PyMol or ChimeraX"
+  },
+  {
+    "objectID": "complex-scene.html",
+    "href": "complex-scene.html",
+    "title": "4. Complex Molecular Scenes",
+    "section": "",
+    "text": "This is how you go about using moelcular nodes for rendering proteins!"
+  },
+  {
+    "objectID": "animation.html",
+    "href": "animation.html",
+    "title": "5. Creating Animations",
+    "section": "",
+    "text": "This is how you go about using moelcular nodes for rendering proteins!"
   }
 ]

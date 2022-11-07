@@ -1,0 +1,10 @@
+---
+title: "Installation"
+subtitle: "Software required for this workshop."
+---
+
+## Installing Blender
+
+## Installing Molecular Nodes
+
+## Optional: Installing PyMol or ChimeraX
