@@ -134,12 +134,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./introduction.html" class="sidebar-item-text sidebar-link">1. Introduction to Blender</a>
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">Introduction to Blender</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exporting-importing.html" class="sidebar-item-text sidebar-link">2. PyMol and ChimeraX</a>
+  <a href="./exporting-importing.html" class="sidebar-item-text sidebar-link">PyMol and ChimeraX</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -167,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
+  <ul class="collapse">
   <li><a href="#installing-blender" id="toc-installing-blender" class="nav-link active" data-scroll-target="#installing-blender">Installing Blender</a></li>
   <li><a href="#installing-molecular-nodes" id="toc-installing-molecular-nodes" class="nav-link" data-scroll-target="#installing-molecular-nodes">Installing Molecular Nodes</a></li>
   <li><a href="#installing-pymol-or-chimerax" id="toc-installing-pymol-or-chimerax" class="nav-link" data-scroll-target="#installing-pymol-or-chimerax">Installing PyMol or ChimeraX</a></li>
@@ -197,6 +197,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="installing-blender" class="level2">
 <h2 class="anchored" data-anchor-id="installing-blender">Installing Blender</h2>
 <p>Download and install the latest <code>3.3.1 LTS</code> release of Blender from the <a href="https://www.blender.org/download/">downloads page</a>.</p>
+<p>Blender is optimised to run on basically any computer. The faster your computer (usually the better the graphics card), the faster it will be able to render the final image, but actually working in the 3D scene and setting everything up should run on basically any computer.</p>
 <div class="callout-warning callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -214,7 +215,8 @@ Warning
 </section>
 <section id="installing-molecular-nodes" class="level2">
 <h2 class="anchored" data-anchor-id="installing-molecular-nodes">Installing Molecular Nodes</h2>
-<p>Download the <a href="https://github.com/BradyAJohnston/MolecularNodes/releases">latest release</a> of Molecular Nodes (currently <code>v0.13.0</code>).</p>
+<p>Download the <a href="https://github.com/BradyAJohnston/MolecularNodes/releases">latest release</a> of Molecular Nodes (currently <code>v0.13.0</code>). This is the addon that I have created for importing <code>.pdb</code> files and other structural biology data like molecular dynamics trajectories into Blender.</p>
+<p>There are other plugins that have previously been developed, but most are currently not being developed and this is the only one that leverages the new Geometry Nodes system and enabled import of molecular dynamics trajectories and structural morphs exported from PyMol and ChimeraX as multi-model <code>.pdb</code> files.</p>
 <div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -245,7 +247,7 @@ Note
 </section>
 <section id="installing-pymol-or-chimerax" class="level2">
 <h2 class="anchored" data-anchor-id="installing-pymol-or-chimerax">Installing PyMol or ChimeraX</h2>
-<p>You likely already have either <a href="https://pymol.org/2/">PyMol</a>, <a href="https://www.cgl.ucsf.edu/chimerax/download.html">ChimeraX</a> or <a href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a> installed. Any version of any of these programs should be fine, and they will only be used in the first part of part of the workshop.</p>
+<p>You likely already have either <a href="https://pymol.org/2/">PyMol</a>, <a href="https://www.cgl.ucsf.edu/chimerax/download.html">ChimeraX</a> or <a href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a> installed. Any version of any of these programs should be fine, and they will only be used in the first part of part of the workshop. You will be exporting either 3D models or <code>.pdb</code> files from these programs to import into Blender.</p>
 
 
 </section>

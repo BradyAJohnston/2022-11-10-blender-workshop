@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Protein Visualisation Workshop - 2. PyMol and ChimeraX</title>
+<title>Protein Visualisation Workshop – exporting-importing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -134,7 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">2. PyMol and ChimeraX</h1>
+      <h1 class="quarto-secondary-nav-title">(Untitled)</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -197,12 +197,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./introduction.html" class="sidebar-item-text sidebar-link">1. Introduction to Blender</a>
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">Introduction to Blender</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exporting-importing.html" class="sidebar-item-text sidebar-link active">2. PyMol and ChimeraX</a>
+  <a href="./exporting-importing.html" class="sidebar-item-text sidebar-link active">PyMol and ChimeraX</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -230,10 +230,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#exporting-the-model" id="toc-exporting-the-model" class="nav-link active" data-scroll-target="#exporting-the-model">Exporting the Model</a>
   <ul class="collapse">
-  <li><a href="#pymol" id="toc-pymol" class="nav-link" data-scroll-target="#pymol">PyMol</a></li>
+  <li><a href="#pymol-and-chimerax" id="toc-pymol-and-chimerax" class="nav-link active" data-scroll-target="#pymol-and-chimerax"><span class="toc-section-number">1</span>  PyMol and ChimeraX</a>
+  <ul class="collapse">
+  <li><a href="#exporting-the-model" id="toc-exporting-the-model" class="nav-link" data-scroll-target="#exporting-the-model">Exporting the Model</a></li>
+  <li><a href="#importing-models-into-blender" id="toc-importing-models-into-blender" class="nav-link" data-scroll-target="#importing-models-into-blender">Importing Models into Blender</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -241,22 +242,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title d-none d-lg-block">2. PyMol and ChimeraX</h1>
-</div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-    
-  </div>
-  
-
-</header>
-
+<section id="pymol-and-chimerax" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> PyMol and ChimeraX</h1>
 <p>There are several ways to import protein structures into Blender and other 3D programs for animation and rendering, they all have their advantages and disadvantages. In this section we will cover how to export a 3D model from PyMol or ChimeraX (the principle remains the same for other Molecular Graphics Software) and to then import it into Blender.</p>
 <section id="exporting-the-model" class="level2">
 <h2 class="anchored" data-anchor-id="exporting-the-model">Exporting the Model</h2>
@@ -324,6 +313,17 @@ Warning
 </div>
 </div>
 <p>You should now have a 3D model save in your working directory, which is ready to be imported into Blender.</p>
+</section>
+</section>
+<section id="importing-models-into-blender" class="level2">
+<h2 class="anchored" data-anchor-id="importing-models-into-blender">Importing Models into Blender</h2>
+<p>For importing models, click <code>File</code> -&gt; <code>Import</code>, depending on which format you exported the 3D model of your protein to, will change which option you are choosing for the 3rd option. In this example I am using the <code>X3d Extensible 3D (.x3d/.wrl</code> to import the <code>protein.wrl</code> file.</p>
+<p><img src="images/CleanShot%202022-11-09%20at%2010.59.15.png" class="img-fluid"></p>
+<p>This is now what the 3D viewport looks like with the 3D model imported inside of Blender. Everything that was present inside of the PyMol scene is now present inside of the 3D viewport in Blender.</p>
+<p><img src="images/paste-3BF4DB5A.png" class="img-fluid"></p>
+<p>The new objects can be seen in the top right-hand corner, in what is called the <em>Outliner.</em> There are multiple shapes now objects and lights that were part of the 3D scene is now also inside of Blender.</p>
+<p><img src="images/CleanShot%202022-11-09%20at%2011.04.01@2x.png" class="img-fluid"></p>
+<p>You can move objects around in the scene.</p>
 
 
 </section>
