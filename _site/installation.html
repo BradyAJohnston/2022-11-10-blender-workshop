@@ -149,12 +149,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./complex-scene.html" class="sidebar-item-text sidebar-link">3. Molecular Nodes</a>
+  <a href="./complex-scene.html" class="sidebar-item-text sidebar-link">4. Complex Molecular Scenes</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./animation.html" class="sidebar-item-text sidebar-link">3. Molecular Nodes</a>
+  <a href="./animation.html" class="sidebar-item-text sidebar-link">5. Creating Animations</a>
   </div>
 </li>
       </ul>
@@ -170,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#installing-blender" id="toc-installing-blender" class="nav-link active" data-scroll-target="#installing-blender">Installing Blender</a></li>
   <li><a href="#installing-molecular-nodes" id="toc-installing-molecular-nodes" class="nav-link" data-scroll-target="#installing-molecular-nodes">Installing Molecular Nodes</a></li>
-  <li><a href="#optional-installing-pymol-or-chimerax" id="toc-optional-installing-pymol-or-chimerax" class="nav-link" data-scroll-target="#optional-installing-pymol-or-chimerax">Optional: Installing PyMol or ChimeraX</a></li>
+  <li><a href="#installing-pymol-or-chimerax" id="toc-installing-pymol-or-chimerax" class="nav-link" data-scroll-target="#installing-pymol-or-chimerax">Installing PyMol or ChimeraX</a></li>
   </ul>
 </nav>
     </div>
@@ -180,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title d-none d-lg-block">Installation</h1>
-<p class="subtitle lead">Software required for this workshop.</p>
+<p class="subtitle lead">Software required for the Protein Visualisation Workshop.</p>
 </div>
 
 
@@ -196,12 +196,56 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="installing-blender" class="level2">
 <h2 class="anchored" data-anchor-id="installing-blender">Installing Blender</h2>
+<p>Download and install the latest <code>3.3.1 LTS</code> release of Blender from the <a href="https://www.blender.org/download/">downloads page</a>.</p>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you are using a Mac, ensure you download the correct Intel or ARM version of Blender.</p>
+<p>If you are are using a newer M1 or M2 mac, download the ARM version, otherwise download the Intel version.</p>
+</div>
+</div>
 </section>
 <section id="installing-molecular-nodes" class="level2">
 <h2 class="anchored" data-anchor-id="installing-molecular-nodes">Installing Molecular Nodes</h2>
+<p>Download the <a href="https://github.com/BradyAJohnston/MolecularNodes/releases">latest release</a> of Molecular Nodes (currently <code>v0.13.0</code>).</p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Installing on a Mac
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When downloading <code>.zip</code> files on Safari on a Mac, Apple tries to be helpful and automatically unzips the file. To install the file inside of Blender, you must have the <code>.zip</code> file and not the unzipped folder. Either download with a different browser (i.e.&nbsp;FireFox) or zip the file manually yourself for installation into Blender.</p>
+</div>
+</div>
+<p>Follow the detailed <a href="https://bradyajohnston.github.io/MolecularNodes/installation.html">installation instructions</a> about how to install the first part of Molecular Nodes.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The optional MDAnalysis installation is not required for this workshop. Feel free to follow the instructions and install it to enable import of molecular dynamics trajectories, but we will likely not be going over that aspect in the workshop.</p>
+</div>
+</div>
 </section>
-<section id="optional-installing-pymol-or-chimerax" class="level2">
-<h2 class="anchored" data-anchor-id="optional-installing-pymol-or-chimerax">Optional: Installing PyMol or ChimeraX</h2>
+<section id="installing-pymol-or-chimerax" class="level2">
+<h2 class="anchored" data-anchor-id="installing-pymol-or-chimerax">Installing PyMol or ChimeraX</h2>
+<p>You likely already have either <a href="https://pymol.org/2/">PyMol</a>, <a href="https://www.cgl.ucsf.edu/chimerax/download.html">ChimeraX</a> or <a href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a> installed. Any version of any of these programs should be fine, and they will only be used in the first part of part of the workshop.</p>
 
 
 </section>

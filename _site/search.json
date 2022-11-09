@@ -74,7 +74,7 @@
     "href": "installation.html#installing-molecular-nodes",
     "title": "Installation",
     "section": "Installing Molecular Nodes",
-    "text": "Installing Molecular Nodes"
+    "text": "Installing Molecular Nodes\nDownload the latest release of Molecular Nodes (currently v0.13.0).\n\n\n\n\n\n\nInstalling on a Mac\n\n\n\nWhen downloading .zip files on Safari on a Mac, Apple tries to be helpful and automatically unzips the file. To install the file inside of Blender, you must have the .zip file and not the unzipped folder. Either download with a different browser (i.e. FireFox) or zip the file manually yourself for installation into Blender.\n\n\nFollow the detailed installation instructions about how to install the first part of Molecular Nodes.\n\n\n\n\n\n\nNote\n\n\n\nThe optional MDAnalysis installation is not required for this workshop. Feel free to follow the instructions and install it to enable import of molecular dynamics trajectories, but we will likely not be going over that aspect in the workshop."
   },
   {
     "objectID": "installation.html#optional-installing-pymol-or-chimerax",
@@ -96,5 +96,19 @@
     "title": "5. Creating Animations",
     "section": "",
     "text": "This is how you go about using moelcular nodes for rendering proteins!"
+  },
+  {
+    "objectID": "installation.html",
+    "href": "installation.html",
+    "title": "Installation",
+    "section": "",
+    "text": "Download and install the latest 3.3.1 LTS release of Blender from the downloads page.\n\n\n\n\n\n\nWarning\n\n\n\nIf you are using a Mac, ensure you download the correct Intel or ARM version of Blender.\nIf you are are using a newer M1 or M2 mac, download the ARM version, otherwise download the Intel version."
+  },
+  {
+    "objectID": "installation.html#installing-pymol-or-chimerax",
+    "href": "installation.html#installing-pymol-or-chimerax",
+    "title": "Installation",
+    "section": "Installing PyMol or ChimeraX",
+    "text": "Installing PyMol or ChimeraX\nYou likely already have either PyMol, ChimeraX or VMD installed. Any version of any of these programs should be fine, and they will only be used in the first part of part of the workshop."
   }
 ]

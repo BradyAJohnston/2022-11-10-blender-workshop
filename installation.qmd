@@ -1,10 +1,34 @@
 ---
 title: "Installation"
-subtitle: "Software required for this workshop."
+subtitle: "Software required for the Protein Visualisation Workshop."
 ---
 
 ## Installing Blender
 
+Download and install the latest `3.3.1 LTS` release of Blender from the [downloads page](https://www.blender.org/download/).
+
+::: callout-warning
+If you are using a Mac, ensure you download the correct Intel or ARM version of Blender.
+
+If you are are using a newer M1 or M2 mac, download the ARM version, otherwise download the Intel version.
+:::
+
 ## Installing Molecular Nodes
 
-## Optional: Installing PyMol or ChimeraX
+Download the [latest release](https://github.com/BradyAJohnston/MolecularNodes/releases) of Molecular Nodes (currently `v0.13.0`).
+
+::: callout-important
+## Installing on a Mac
+
+When downloading `.zip` files on Safari on a Mac, Apple tries to be helpful and automatically unzips the file. To install the file inside of Blender, you must have the `.zip` file and not the unzipped folder. Either download with a different browser (i.e. FireFox) or zip the file manually yourself for installation into Blender.
+:::
+
+Follow the detailed [installation instructions](https://bradyajohnston.github.io/MolecularNodes/installation.html) about how to install the first part of Molecular Nodes.
+
+::: callout-note
+The optional MDAnalysis installation is not required for this workshop. Feel free to follow the instructions and install it to enable import of molecular dynamics trajectories, but we will likely not be going over that aspect in the workshop.
+:::
+
+## Installing PyMol or ChimeraX
+
+You likely already have either [PyMol](https://pymol.org/2/), [ChimeraX](https://www.cgl.ucsf.edu/chimerax/download.html) or [VMD](https://www.ks.uiuc.edu/Research/vmd/) installed. Any version of any of these programs should be fine, and they will only be used in the first part of part of the workshop.
