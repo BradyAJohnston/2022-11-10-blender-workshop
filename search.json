@@ -28,6 +28,13 @@
     "text": "Absolute introduction to Blender (really basics)\n\n\nThe different workspaces\nHow to move the camera around\nHow to move objects around\n\n\nHow to import structures (from pymol / chimerax)\nMolecular Nodes (basics of)\nMembrane scene / complicated scene\nShowing some animations\nRecap of the first day / and what can be done\nMore on molecular nodes and what people want to play around with."
   },
   {
+    "objectID": "quick-reference.html",
+    "href": "quick-reference.html",
+    "title": "Protein Visualisation Workshop",
+    "section": "",
+    "text": "Keys\nAction\n\n\n\n\nLMB\nSelect\n\n\nRMB\nContext Menu\n\n\nA, Alt + A\nSelect All, Deselect All\n\n\nX / Delete\nDelete Selected\n\n\nShift + A\nAdd New Object / Node\n\n\nG, R, S\nGrab, Rotate, Scale\n\n\nTab\nToggle Edit Mode\n\n\nX / Y / Z\n(While transforming) Constrain to Axis\n\n\nShift + (X / Y / Z)\n(While transforming) Constrain to perpendicular plane.\n\n\nZ\nChange viewport shading (rendered / workbench)"
+  },
+  {
     "objectID": "introduction.html",
     "href": "introduction.html",
     "title": "Protein Visualisation Workshop",
